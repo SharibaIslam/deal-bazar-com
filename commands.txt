@@ -1,0 +1,267 @@
+
+--shwapno--
+python grocery_scraper.py --url "https://www.shwapno.com/food" --render playwright --scrolls 20
+
+
+--meena bazar--
+python grocery_scraper.py --url "https://meenabazaronline.com/category/fish" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/meat" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/fruits" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/vegetables" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/dairy" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/frozen" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/grocery" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/generalmerchandise" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/household" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/stationery" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://meenabazaronline.com/category/apparel&linen" --render playwright --scrolls 20
+
+
+
+
+--panda mart--
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/DEALS" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/572fa476-3b5a-44b1-aef8-978b816304f8" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/e729dd9f-e16d-4744-92d8-451955fee541" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/05011e0e-8e72-4055-bddb-2ff2d788ba59" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/2fba527b-09e7-4f1b-9249-d5ac328aabae" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/eeffac0d-6340-46d3-ba79-8ed595e4ad7b" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/fa052ce0-ec3d-4b69-85e6-b67dd0aefe71" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/bb17dde5-19d4-42ae-b90a-748f52835a78" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/77948119-8bd4-4d46-aa8a-f0f78cd970a6" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/bf1f8ccc-d4ae-4cc2-b493-468c32ac63bb" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/62720792-4bb2-453e-9715-871b2e7da553" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/0f79501c-e9dc-49cc-97a6-197c5ec46d9c" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/e1d29944-11cf-421a-b14a-db4a3dcb9bd0" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/0a8d0ed7-5a36-4676-9b52-4e1cc216b18c" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/d49ec2fe-91bd-4bf8-91b7-a7168a1d6e24" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/adb6ddbe-0333-4a9f-893a-cf96ee348469" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/4f1ea0e5-cdc7-47ce-b945-275458e97b5d" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/3c509fda-7efc-4f26-919b-ef53034eb11e" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/afd15544-3c93-427b-9b47-ad13468d1411" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/3f1198d4-ba1d-422b-a4c4-3a8f500e3d71" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/3e5f741b-78fd-448f-afee-0673b6312ef8" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/3a99d0dc-abb5-4e9e-a0b4-cc2959e79a5c" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/87a891e8-3dab-46b3-bce6-be33a7741111" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/3251ff34-bebf-4b8d-b17a-c009afa40cb0" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/3377605c-0faf-4ff6-a884-a12073e160b0" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/6162e67f-5660-43a0-ac7e-dc0c788142d9" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/29ef9579-c9ac-4acb-a378-d3c1f2ef01ab" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/1d80ba08-5824-477d-8444-71cb586e0e01" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/6bb21bd2-0eca-447c-90d9-37a7c52ba101" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/e238c104-2891-4936-a6f9-0b5f5b560fe9" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/43ce96b9-4ff8-4c7a-8d1e-e7c3968052ff" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.foodpanda.com.bd/darkstore/vbpl/pandamart-gulshan-banani/category/15a4b48e-7188-4319-ab80-436f5c3e9579" --render playwright --scrolls 20
+
+
+
+
+--othoba daily bazar--
+
+python grocery_scraper.py --url "https://othoba.com/daily-bazar" --render playwright --scrolls 80
+
+--chaldal--
+
+python grocery_scraper.py --url "https://chaldal.com/popular" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/flash-sales" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/fresh-vegetable" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/fresh-fruit" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/chicken-poultry" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/premium-perishables" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/frozen-fish" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/meat-new" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/tofu-meat-alternatives" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/dried-fish" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/spices" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/salt-sugar" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/rices" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/dal-or-lentil" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/ready-mix" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/shemai-suji" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/miscellaneous" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/oil" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/colors-flavours" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/ghee" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/premium-ingredients" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/tomato-sauces" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/pickles" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/cooking-sauces" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/other-sauces" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/eggs" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/powder-milk" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/liquid-uht-milk" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/yogurt" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/cheeses" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/condensed-milk-cream" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/butter-sour-cream" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/breads" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/tea-coffee-2" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/local-breakfast" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/cereals" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/honey" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/spreads-syrups" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/energy-boosters" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/jams-jellies" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/chocolates" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/wafers" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/candies" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/mints-mouth-fresheners" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/halal-marshmallows" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/noodles" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/cookies-2" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/local-snacks" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/plain-biscuits" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/chips-pretzels" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/toast-biscuits" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/cream-biscuits" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/pasta-macaroni" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/soups" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/popcorn-nuts" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/salted-biscuits" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/cakes" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/salad-dressing" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/beverages-tea" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/soft-drinks" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/coffees" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/powder-mixes" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/juice" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/water" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/flour" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/nuts-dried-fruits" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/baking-ingredients" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/baking-mixes" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/chicken-snacks" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/frozen-parathas-roti" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/vegetable-snacks" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/mushroom-cans" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+
+python grocery_scraper.py --url "https://chaldal.com/beef-snacks" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+
+python grocery_scraper.py --url "https://chaldal.com/vegetable-cans" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/fish-cans" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/canned-fruits" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/fish-snacks" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/diabetic-food" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+python grocery_scraper.py --url "https://chaldal.com/ice-cream" --render playwright --scrolls 80 --scroll-wait 2000 --robots-file robots_chaldal.com.txt --auto-location
+
+
+
+
+--daraz mart--
+python grocery_scraper.py --url "https://www.daraz.com.bd/groceries-fresh-produce/?spm=a2a0e.27105816.cate_9.1.2c24140buI1zoM" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.daraz.com.bd/breakfast/?spm=a2a0e.27105816.cate_9.2.2c24140bMFYncm" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.daraz.com.bd/groceries-baking-cooking-cooking-ingredients/?spm=a2a0e.27105816.cate_9.3.2c24140bLetRqN" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.daraz.com.bd/snacks/?spm=a2a0e.27105816.cate_9.4.2c24140bpeEqUA" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.daraz.com.bd/groceries-beverages-uht-milk-milk-powder/?spm=a2a0e.27105816.cate_9.5.2c24140bHk0cwC" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.daraz.com.bd/powdered-spices/?spm=a2a0e.27105816.cate_9.6.2c24140bBPU0iX&&service=FBL&location=-21" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://www.daraz.com.bd/candy-chocolate/?spm=a2a0e.27105816.cate_9.7.2c24140b6fBTlc" --render playwright --scrolls 20
+
+
+--unimart--
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=29&name=QnJlYWRz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=30&name=SW1wb3J0ZWQgIEJpc2N1aXRzICYgQ29va2llcw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=31&name=TG9jYWwgQmlzY3VpdHMgJiBDb29raWVz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=32&name=U2F2b3JpZXM=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=56&name=Q2FuZHkvQ2hvY29sYXRlL0d1bQ==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=77&name=UmVhZHkgU25hY2tz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=57&name=Q2FubmVkIEZvb2Q=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=62&name=Rm9vZCBCdW5kbGUgUGFjaw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=55&name=QmFraW5nIE5lZWRz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=54&name=QmFieSBGb29k" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=58&name=Q2VyZWFscw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=59&name=Q29uZGltZW50cw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=60&name=Q29va2luZyBPaWw=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=61&name=RmxvdXI=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=63&name=Rm9vZCBTcHJlYWRz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=64&name=R2hlZQ==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=65&name=SGVhbHRoIEZvb2Q=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=66&name=SG9tZW1hZGUgU25hY2tz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=67&name=SnVpY2U=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=68&name=UHJvY2Vzc2VkIE1pbGs=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=69&name=TGVudGlscw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=70&name=U2FsdA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=71&name=TG9vc2UgUmljZQ==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=72&name=Tm9vZGxlcw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=73&name=UGFja2VkIFJpY2U=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=74&name=UGFzdGFz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=75&name=UG93ZGVyIE1pbGs=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=76&name=UmVhZHkgRm9vZA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=78&name=U2FsdA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=79&name=U2VtYWk=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=80&name=U3BpY2Vz" --auto-learn --relearn
+python grocery_scraper.py --url "www.unimart.online/category-item?id=81&name=U3VnYXI=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=82&name=VWh0IE1pbGs=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=42&name=QnV0dGVy" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=44&name=Q3JlYW0=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=45&name=Q3VyZA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=46&name=RGFpcnkgRHJpbmtz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=43&name=Q2hlZXNl" --auto-learn --relearn
+python grocery_scraper.py --url "www.unimart.online/category-item?id=47&name=RnJvemVuIFBlcmlzaGFibGU=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=48&name=SWNlIENyZWFt" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=49&name=TWlsaw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=52&name=UnV0aS9QYXJhdGE=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=51&name=UHJvY2Vzc2VkIEZvb2Q=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=53&name=U25hY2tz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=50&name=T3RoZXIgRm9vZA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=121&name=Q29mZmVl" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=122&name=RHJpbmtz" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=123&name=VGVh" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=120&name=SnVpY2U=" --auto-learn --relearn
+python grocery_scraper.py --url "www.unimart.online/category-item?id=83&name=QmVlZg==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=84&name=QmVlZiBWYWx1ZSBBZGRlZA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=85&name=RHJ5IEZpc2g=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=86&name=RnJlc2ggV2F0ZXIgRmlzaA==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=87&name=TXV0dG9u" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=88&name=U2VhIEZpc2g=" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=134&name=Q2hpY2tlbg==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=135&name=RHVjaw==" --auto-learn --relearn
+python grocery_scraper.py --url "https://www.unimart.online/category-item?id=136&name=RWdn" --auto-learn --relearn
+
+--khaasfood--https://www.unimart.online/category-item?id=56&name=Q2FuZHkvQ2hvY29sYXRlL0d1bQ==
+python grocery_scraper.py --url "https://www.khaasfood.com/products" --render playwright --scrolls 20
+
+agora:
+python grocery_scraper.py --url "https://agorasuperstores.com/category/veg-fruits" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/snacks" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/fish-meat" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/dairy" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/condiments" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/baby-care" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/toys" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/baking-needs" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/grocery-essentials" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/snacks" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/house-cleaning" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/beauty-hygiene" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/stationary" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/living" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/pharmacy" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/buy-one-get-free" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/pet-care" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/best-savings" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/special-offers" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/hot-deal" --render playwright --scrolls 20
+python grocery_scraper.py --url "https://agorasuperstores.com/category/poultry" --render playwright --scrolls 20
+
+
+green grocery:
+
+python grocery_scraper.py --url "https://greengrocery.com.bd/products" --render playwright --scrolls 20
+
+Ghore Bazar:
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/honey-2" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/oil-ghee" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/dates" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/spices" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/nuts-seeds" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/beverage" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/rice" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/flours-lentils" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/organic-certified" --render playwright --scrolls 80
+python grocery_scraper.py --url "https://ghorerbazar.com/collections/pickle" --render playwright --scrolls 80
+
+
+
+
+
+
