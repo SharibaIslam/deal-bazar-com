@@ -1,0 +1,6 @@
+2026/10/22-14:31:52.898 4a84 Creating DB S:\grocery scrapper\browser_profile\Default\IndexedDB\https_www.shwapno.com_0.indexeddb.leveldb since it was missing.
+2026/10/22-14:31:52.907 4a84 Reusing MANIFEST S:\grocery scrapper\browser_profile\Default\IndexedDB\https_www.shwapno.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/22-14:31:52.953 3798 Level-0 table #5: started
+2026/10/22-14:31:52.955 3798 Level-0 table #5: 776 bytes OK
+2026/10/22-14:31:52.958 3798 Delete type=0 #3
+2026/10/22-14:31:52.959 3798 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

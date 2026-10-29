@@ -1,0 +1,14 @@
+2026/10/28-16:24:33.954 5678 Reusing MANIFEST S:\grocery scrapper\browser_profile_6am\Default\IndexedDB\https_www.unimart.online_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/28-16:24:33.955 5678 Recovering log #26
+2026/10/28-16:24:33.955 5678 Reusing old log S:\grocery scrapper\browser_profile_6am\Default\IndexedDB\https_www.unimart.online_0.indexeddb.leveldb/000026.log 
+2026/10/28-16:24:33.955 5678 Delete type=2 #24
+2026/10/28-16:24:33.983 1c78 Level-0 table #31: started
+2026/10/28-16:24:33.988 1c78 Level-0 table #31: 932 bytes OK
+2026/10/28-16:24:33.990 1c78 Delete type=0 #26
+2026/10/28-16:24:33.992 2ea4 Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\x05' @ 342 : 1
+2026/10/28-16:24:33.992 2ea4 Compacting 1@0 + 1@1 files
+2026/10/28-16:24:33.995 2ea4 Generated table #32@0: 50 keys, 1472 bytes
+2026/10/28-16:24:33.995 2ea4 Compacted 1@0 + 1@1 files => 1472 bytes
+2026/10/28-16:24:33.996 2ea4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/28-16:24:33.996 2ea4 Delete type=2 #31
+2026/10/28-16:24:33.998 1c78 Manual compaction at level-0 from '\x00\x0a\x00\x00\x05' @ 342 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)

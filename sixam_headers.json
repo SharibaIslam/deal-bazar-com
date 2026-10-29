@@ -1,0 +1,16 @@
+{
+  "unimart.online": {
+    "api_path": "/api/v1/categories/items/{cid}",
+    "headers": {
+      "longitude": "\"90.3728965\"",
+      "storeid": "2",
+      "x-localization": "en",
+      "latitude": "\"23.7444424\"",
+      "zoneid": "[1]",
+      "moduleid": "1",
+      "areaid": "20",
+      "content-type": "application/json; charset=UTF-8"
+    },
+    "params": {}
+  }
+}

@@ -1,0 +1,7 @@
+2026/10/23-00:15:59.071 29a8 Reusing MANIFEST S:\grocery scrapper\browser_profile\Default\IndexedDB\https_www.unimart.online_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/23-00:15:59.072 29a8 Recovering log #4
+2026/10/23-00:15:59.073 29a8 Reusing old log S:\grocery scrapper\browser_profile\Default\IndexedDB\https_www.unimart.online_0.indexeddb.leveldb/000004.log 
+2026/10/23-00:15:59.114 18ec Level-0 table #8: started
+2026/10/23-00:15:59.116 18ec Level-0 table #8: 1928 bytes OK
+2026/10/23-00:15:59.118 18ec Delete type=0 #4
+2026/10/23-00:15:59.119 3db0 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

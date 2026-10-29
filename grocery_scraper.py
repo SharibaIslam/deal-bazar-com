@@ -38,7 +38,7 @@ from urllib.robotparser import RobotFileParser
 import requests
 from bs4 import BeautifulSoup, NavigableString
 
-VERSION = "v18-urls-list-click-visible-2026-10-25"  # ei nam run er shuru te print hoy: kon file chalachho bujhte
+VERSION = "v21-no-product-diagnose-2026-10-25"  # ei nam run er shuru te print hoy: kon file chalachho bujhte
 USER_AGENT = "Mozilla/5.0 (compatible; GroceryPriceBot/2.0; personal price comparison)"
 DELAY_RANGE = (1.5, 3.5)
 TIMEOUT = 20
@@ -1434,50 +1434,101 @@ def fill_urls(items, tpl):
     return n
 
 
+def _derive_tpl(url, ids):
+    """URL e item er kono id (shobcheye lomba age) thakle sheta {key} diye replace kore template banay."""
+    for key, val in sorted(ids.items(), key=lambda kv: -len(kv[1])):
+        pat = rf"(?<![A-Za-z0-9]){re.escape(str(val))}(?![A-Za-z0-9])"
+        if re.search(pat, url):
+            return re.sub(pat, "{" + key + "}", url, count=1)
+    return None
+
+
+def _save_url_pattern(host, tpl):
+    try:
+        with open(URL_PATTERN_FILE, encoding="utf-8") as f:
+            allv = json.load(f)
+    except (OSError, ValueError):
+        allv = {}
+    allv[host] = tpl
+    with open(URL_PATTERN_FILE, "w", encoding="utf-8") as f:
+        json.dump(allv, f, ensure_ascii=False, indent=2)
+    print(f"  [learn-url] URL pattern shikha hoyeche: {tpl}  -> {URL_PATTERN_FILE}")
+
+
 def learn_url_pattern(fetcher, rows, host):
-    """Browser e ekta product click kore URL ki hoy dekhe pattern ({id} ba {code}...) shikhe file e rakhe.
+    """Product URL pattern shikhe: (1) page er <a href> theke (click lage na), (2) na hole browser e product click kore.
     Boro list e upor-er product DOM theke soriye jay, tai je product gulo ekhon page e ache segulo try kore."""
     cands = [r for r in rows if r.get("_ids") and r.get("name")]
     if not cands:
         print("  [learn-url] API item e id/code/slug nai, pattern shikha jabe na")
         return False
     page = fetcher._page
-    before, last_err, cand = page.url, "", None
-    for c in cands[-8:][::-1] + cands[:4]:  # scroll er por nicher gulo DOM e thake, tai age oigulo
+    page_url = page.url
+    # ---- 1) <a href> link e product id thakle: click chhara-i pattern
+    try:
+        hrefs = [h for h in set(page.eval_on_selector_all("a[href]", "els => els.map(e => e.href)")) if h != page_url]
+    except Exception:
+        hrefs = []
+    for c in cands:
+        for h in hrefs:
+            tpl = _derive_tpl(h, c["_ids"])
+            if not tpl:
+                continue
+            filled = [fill for fill in (re.sub(r"\{(\w+)\}", lambda m: o["_ids"].get(m.group(1), "\0"), tpl)
+                                        for o in cands if o is not c) if fill in hrefs]
+            if filled or sum(1 for x in hrefs if _derive_tpl(x, c["_ids"])) == 1:
+                _save_url_pattern(host, tpl)
+                return True
+    print(f"  [learn-url] page e <a> link: {len(hrefs)} ta, kintu product id wala link nai. Click kore dekhchi...")
+    # ---- 2) click: normal -> JS click -> mouse click
+    before, last_err, cand, how = page.url, "", None, ""
+    for c in cands[-8:][::-1] + cands[:4]:
         loc = page.get_by_text(c["name"][:25], exact=False)
         try:
-            if loc.count() == 0:
+            n = loc.count()
+        except Exception:
+            n = 0
+        for i in range(min(n, 4)):
+            el = loc.nth(i)
+            try:
+                if not el.is_visible():
+                    continue
+                el.scroll_into_view_if_needed(timeout=3000)
+            except Exception:
                 continue
-            el = loc.first
-            el.scroll_into_view_if_needed(timeout=3000)
-            el.click(timeout=4000)
-            cand = c
+            for how_try in ("click", "js", "mouse"):
+                try:
+                    if how_try == "click":
+                        el.click(timeout=3000)
+                    elif how_try == "js":
+                        el.evaluate("e => e.click()")  # overlay/popup upore thakleo element e shorashori click
+                    else:
+                        bb = el.bounding_box()
+                        page.mouse.click(bb["x"] + bb["width"] / 2, bb["y"] + bb["height"] / 2)
+                except Exception as e:
+                    last_err = f"{type(e).__name__}: {str(e).splitlines()[0][:140]}"
+                    continue
+                page.wait_for_timeout(1500)
+                cand, how = c, how_try
+                if page.url != before:
+                    break
+            if cand is not None:
+                break
+        if cand is not None:
             break
-        except Exception as e:
-            last_err = type(e).__name__
     if cand is None:
-        print(f"  [learn-url] page e kono product click kora jayni ({last_err or 'DOM e product text nai'})")
+        print(f"  [learn-url] page e kono product click kora jayni: {last_err or 'DOM e product text nai'}")
         return False
-    page.wait_for_timeout(2500)
+    page.wait_for_timeout(1000)
     after = page.url
     if after == before:
-        print("  [learn-url] click e URL bodlayni (popup/modal hote pare), product e alada URL nai. "
+        print(f"  [learn-url] click hoyeche ({how}) kintu URL bodlayni (popup/modal hote pare), product e alada URL nai. "
               "Dorkar hole --page-url-fallback ba --item-url dao")
         return False
-    for key, val in sorted(cand["_ids"].items(), key=lambda kv: -len(kv[1])):  # shobcheye specific (lomba) id age
-        pat = rf"(?<![A-Za-z0-9]){re.escape(str(val))}(?![A-Za-z0-9])"
-        if re.search(pat, after):
-            tpl = re.sub(pat, "{" + key + "}", after, count=1)
-            try:
-                with open(URL_PATTERN_FILE, encoding="utf-8") as f:
-                    allv = json.load(f)
-            except (OSError, ValueError):
-                allv = {}
-            allv[host] = tpl
-            with open(URL_PATTERN_FILE, "w", encoding="utf-8") as f:
-                json.dump(allv, f, ensure_ascii=False, indent=2)
-            print(f"  [learn-url] URL pattern shikha hoyeche: {tpl}  -> {URL_PATTERN_FILE}")
-            return True
+    tpl = _derive_tpl(after, cand["_ids"])
+    if tpl:
+        _save_url_pattern(host, tpl)
+        return True
     print(f"  [learn-url] click er por URL e kono id mile ni: {after[:140]}")
     print(f"    (product ids: {cand['_ids']})")
     return False
@@ -1517,6 +1568,28 @@ def enrich(items, other, fields=("url", "image")):
                     it[f], got = m[f], True
             filled += got
     return filled
+
+
+def no_product_diag(fetcher):
+    """Product na pele page e asole ki ache dekhay (title, text, screenshot, bot-check korche kina)."""
+    page = getattr(fetcher, "_page", None)
+    if page is None:
+        return
+    try:
+        title, url = page.title(), page.url
+        text = clean_text(page.evaluate("document.body ? document.body.innerText : ''"))[:220]
+        print(f"  [diag] URL: {url[:110]}")
+        print(f"  [diag] title: {title[:80]!r}")
+        print(f"  [diag] page text: {text!r}")
+        print(f"  [diag] JSON API call: {len(getattr(fetcher, 'payloads', []))} ta | console: {getattr(fetcher, 'console', [])[-2:]}")
+        fetcher._shot("no_products")
+        print("  [diag] screenshot: debug_shots/no_products.png (eta amake pathao)")
+        if re.search(r"captcha|access denied|are you a robot|verify you are|unusual traffic|blocked|just a moment|press (&|and) hold|too many requests",
+                     f"{title} {text}", re.I):
+            print("  [diag] site bot-check/block dichhe mone hocche. --headed diye dekho, ba onno folder/profile (age jekhane kaj korto) theke chalao. "
+                  "Ami bot-check bypass korbo na.")
+    except Exception as e:
+        print(f"  [diag] hoyni: {type(e).__name__}")
 
 
 def scrape(url_template, fetcher, pages, mode):
@@ -1611,6 +1684,7 @@ def scrape(url_template, fetcher, pages, mode):
         if not new:
             if not items:
                 print("  ! kono product pawa jayni. --render playwright diye try koro.")
+                no_product_diag(fetcher)
             break
         for i in new:
             seen.add((i["name"], i["quantity"], i["price"]))
@@ -1619,7 +1693,9 @@ def scrape(url_template, fetcher, pages, mode):
             rows.append(i)
         time.sleep(random.uniform(*DELAY_RANGE))
     if LEARN_URL and rows and hasattr(fetcher, "_page") and not _load_url_pattern(site):
-        learn_url_pattern(fetcher, rows, site)
+        if learn_url_pattern(fetcher, rows, site):  # shikhar sathe sathe ei run er row e-o boshao
+            n_url = fill_urls(rows, _load_url_pattern(site))
+            print(f"  URL pattern diye {n_url}/{len(rows)} ta URL bosano hoyeche")
     return rows
 
 
